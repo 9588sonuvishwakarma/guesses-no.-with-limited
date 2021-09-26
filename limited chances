@@ -1,0 +1,11 @@
+number = 5
+attempts = 0
+print("you have six chances to win the game ")
+while(attempts<=5):
+    attempts+=1
+    guesses =int(input("enter your number"))
+    if guesses <= number:
+        print("you number is less")
+    else:
+        print(f"good  your attempts = \"{attempts}\"")
+        exit()
